@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - SSU New Gen TechMart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>E-commerce Shop</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html" class="header-cart cart-btn" aria-label="View cart">
+            <svg class="cart-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6h15l-1.5 9h-12z"></path>
+                <circle cx="9" cy="20" r="1"></circle>
+                <circle cx="19" cy="20" r="1"></circle>
+            </svg>
+            <span class="cart-count">0</span>
+        </a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h2>Your Shopping Cart</h2>
+
+    <!-- CART TABLE -->
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Cart items will be loaded here by JavaScript -->
+        </tbody>
+    </table>
+
+    <!-- CART SUMMARY -->
+    <div class="cart-summary">
+        <h3>Summary</h3>
+
+        <p>Subtotal: <strong>$79.97</strong></p>
+        <p>Shipping: <strong>$5.00</strong></p>
+        <p>Total: <strong>$84.97</strong></p>
+
+        <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 E-Commerce Demo. All rights reserved.
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

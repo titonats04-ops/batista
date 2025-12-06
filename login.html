@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+</head>
+<body>
+    <main class="container" aria-label="Login page">
+        <div class="glass-container">
+            <section class="card" role="region" aria-labelledby="login-heading">
+            <header>
+                <h1 id="login-heading">Sign in to your account</h1>
+
+            </header>
+
+            <form id="loginForm" novalidate>
+                <div>
+                    <label for="identifier">Email or username</label>
+                    <input id="identifier" name="identifier" type="email" inputmode="email"
+                                 placeholder="you@example.com" autocomplete="username" required
+                                 aria-describedby="identifierHelp">
+                    <div id="identifierHelp" class="muted" style="font-size:0.85rem; margin-top:0.25rem;">
+                        Use your account email. You can also use a username if supported.
+                    </div>
+                </div>
+
+                <div>
+                    <label for="password" class="row">
+                        <span>Password</span>
+                        <a class="link right" href="#" id="forgotLink">Forgot?</a>
+                    </label>
+                    <div style="display:flex;gap:0.5rem;align-items:center;">
+                        <input id="password" name="password" type="password" minlength="6" placeholder="••••••••"
+                                     autocomplete="current-password" required aria-describedby="pwdHelp" class="left">
+                        <button type="button" class="toggle-password" aria-label="Show password" title="Show password" id="togglePwd">Show</button>
+                    </div>
+                    <div id="pwdHelp" class="muted" style="font-size:0.85rem; margin-top:0.25rem;">
+                        Minimum 6 characters.
+                    </div>
+                </div>
+
+                <div class="helpers">
+                    <label style="display:flex;align-items:center;gap:0.5rem;">
+                        <input type="checkbox" id="remember" name="remember" />
+                        <span class="muted">Remember me</span>
+                    </label>
+                    <div class="muted">Need an account? <a class="link" href="signup.html">Sign up</a></div>
+                </div>
+
+                <div class="form-actions">
+                    <button class="btn" type="submit">Log in</button>
+                    <button class="btn secondary back-btn" type="button" aria-label="Go back" title="Go back" onclick="history.back()">Back</button>
+                </div>
+
+                <div class="separator">Or continue with</div>
+
+                <div class="socials">
+                    <button type="button" aria-label="Sign in with Google">Google</button>
+                    <button type="button" aria-label="Sign in with GitHub">GitHub</button>
+                </div>
+
+                <div id="feedback" role="status" aria-live="polite" style="min-height:1.25rem;"></div>
+            </form>
+        </section>
+        </div>
+
+        <footer>
+            By signing in you agree to our <a class="link" href="#">Terms</a> and <a class="link" href="#">Privacy Policy</a>.
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

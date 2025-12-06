@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>SSU New Gen TechMart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+		<a href="cart.html" class="header-cart cart-btn" aria-label="View cart">
+			<svg class="cart-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6 6h15l-1.5 9h-12z"></path>
+				<circle cx="9" cy="20" r="1"></circle>
+				<circle cx="19" cy="20" r="1"></circle>
+			</svg>
+			<span class="cart-count">0</span>
+		</a>
+		<a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+<div class="container">
+	<div class="sidebar">
+		<h3>Categories</h3>
+		<a href="lowmd.html">Low End MD</a>
+		<a href="highmd.html">High End MD</a>
+		<a href="shop.html#categories" class="back-button">Back to Categories</a>
+	</div>
+	<div class="products">
+		<div class="product">
+			<img src="md/high end/aorus.jpeg" alt="">
+			<h3>Aorus Z790 ELITE</h3>
+			<p>AX Z790 ELITE AX DDR4 Desktop Motherboard</p>
+			<div class="price">$19.99</div>
+			<button class="add-to-cart" data-id="1" data-name="CORSAIR MP600 Elite 2TB" data-price="19.99" data-image="sdd/highssd/corsair.jpeg">Add to Cart</button>
+		</div>
+
+		<div class="product">
+			<img src="md/high end/asrock.png" alt="">
+			<h3>ASRock H670 PG Riptide Intel Core 12th Gen </h3>
+			<p>128GB DDR4 LGA1700 ATX Black Motherboard</p>
+			<div class="price">$29.99</div>
+			<button class="add-to-cart" data-id="2" data-name="Crucial T700 4TB PCIe Gen5 NVMe M.2" data-price="29.99" data-image="sdd/highssd/crucial.jpeg">Add to Cart</button>
+		</div>
+
+		<div class="product">
+			<img src="md/high end/gigabyte.jpeg" alt="">
+			<h3>Gigabyte</h3>
+			<p>Gaming Desktop Motherboard Z790GAMINGXAX</p>
+			<div class="price">$39.99</div>
+			<button class="add-to-cart" data-id="3" data-name="MSI 2TB PCIe Gen5x4" data-price="39.99" data-image="sdd/highssd/msi.png">Add to Cart</button>
+		</div>
+
+		<div class="product">
+			<img src="md/high end/msi.jpeg" alt="">
+			<h3>MSI MEG Z890 GODLIKE, E-ATX</h3>
+			<p>Intel Core Ultra Processors (Series 2), LGA 1851 - Dynamic Dashboard III, EZ Slide M.2, DDR5 (9200+ MT/s OC), M.2 & PCIe 5.0, TB 5, Wi-Fi 7, 10G LAN</p>
+			<div class="price">$49.99</div>
+			<button class="add-to-cart" data-id="4" data-name="Samsung 990 PRO 1TB" data-price="49.99" data-image="sdd/highssd/samsung.jpeg">Add to Cart</button>
+		</div>
+
+		<div class="product">
+			<img src="md/high end/ryzen.jpg" alt="">
+			<h3>AMD Ryzen 7</h3>
+			<p> 8-Core 4.0GHz AM5 Processor & MSI B650 TOMAHAWK WIFI ATX AM5 DDR5 </p>
+			<div class="price">$49.99</div>
+			<button class="add-to-cart" data-id="5" data-name="Western Digital WD_BLACK SN770 M.2 2280 500GB PCIe Gen4 16GT/s" data-price="49.99" data-image="sdd/highssd/western.jpeg">Add to Cart</button>
+		</div>
+
+	</div>
+</div>
+<footer>
+    © 2025 E-Commerce Demo. All rights reserved.
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

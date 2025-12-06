@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up</title>
+
+</head>
+<body>
+
+    <main class="container" aria-label="Signup page">
+        <section class="card" role="region" aria-labelledby="signup-heading">
+            <h1 id="signup-heading">Create your account</h1>
+
+            <form id="signupForm" novalidate>
+            <div>
+                <label for="fullName">Full name *</label>
+                <input id="fullName" name="fullName" type="text" autocomplete="name" required minlength="2" placeholder="Gabo Sebastian" />
+                <div id="nameError" class="error" aria-live="polite"></div>
+            </div>
+
+            <div>
+                <label for="email">Email address *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+                <div id="emailError" class="error" aria-live="polite"></div>
+            </div>
+
+            <div>
+                <label for="phone">Phone number (optional)</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+6393 9232 9831" pattern="^\+?[\d\s\-().]{7,}$" />
+            </div>
+
+            <div>
+                <label for="password">Password *</label>
+                <div class="pw-row">
+                    <input id="password" name="password" type="password"
+                                 required
+                                 minlength="8"
+                                 autocomplete="new-password"
+                                 placeholder="At least 8 characters"
+                                 pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}" />
+                    <button type="button" class="toggle" id="togglePw" aria-pressed="false" title="Show password">Show</button>
+                </div>
+                <div class="helper small">Use upper and lowercase letters, numbers, and symbols.</div>
+                <div class="meter" aria-hidden="true"><i id="pwMeter"></i></div>
+                <div id="passwordError" class="error" aria-live="polite"></div>
+            </div>
+
+            <div>
+                <label for="confirmPassword">Confirm password *</label>
+                <input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required placeholder="Repeat your password" />
+                <div id="confirmError" class="error" aria-live="polite"></div>
+            </div>
+
+            <div class="terms">
+                <input id="terms" name="terms" type="checkbox" required />
+                <label for="terms" class="small">I agree to the <a href="#" tabindex="-1">Terms of Service</a> and <a href="#" tabindex="-1">Privacy Policy</a> *</label>
+            </div>
+            <div id="termsError" class="error" aria-live="polite"></div>
+
+                <button class="btn" id="submitBtn" type="submit">Create account</button>
+
+                <div id="result" class="notice" aria-live="polite"></div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

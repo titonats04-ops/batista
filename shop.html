@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>SSU New Gen TechMart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html" class="header-cart cart-btn" aria-label="View cart">
+            <svg class="cart-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6h15l-1.5 9h-12z"></path>
+                <circle cx="9" cy="20" r="1"></circle>
+                <circle cx="19" cy="20" r="1"></circle>
+            </svg>
+            <span class="cart-count">0</span>
+        </a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+    <div class="container">
+        <div class="sidebar">
+            <h3>Categories</h3>
+            <a href="lowssd.html">SSD Storage</a>
+            <a href="lowhdd.html">HDD Storage</a>
+            <a href="cases1.html">PC Cases</a>
+            <a href="lowmd.html">Mother Board</a>
+        </div>
+
+        <div class="products">
+            <div class="product">
+                <img src="sdd/lowssd/digifast.jpg" alt="MSI SSD">
+                <h3>MSI 2TB PCIe Gen5</h3>
+                <p>High-speed storage</p>
+                <div class="price">$19.99</div>
+                <button class="add-to-cart" data-id="1" data-name="MSI 2TB PCIe Gen5" data-price="19.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="sdd/lowssd/timetec.jpeg" alt="Timetec SSD">
+                <h3>Timetec SSD</h3>
+                <p>256GB 3D NAND</p>
+                <div class="price">$29.99</div>
+                <button class="add-to-cart" data-id="2" data-name="Timetec SSD 256GB" data-price="29.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="sdd/highssd/western.jpeg" alt="Western Digital">
+                <h3>Western Digital</h3>
+                <p>WD_BLACK SN770 2TB</p>
+                <div class="price">$39.99</div>
+                <button class="add-to-cart" data-id="3" data-name="Western Digital WD_BLACK" data-price="39.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="cases/high/WSNBB.jpg" alt="WSNBB Case">
+                <h3>WSNBB Case</h3>
+                <p>Gaming Computer Case</p>
+                <div class="price">$49.99</div>
+                <button class="add-to-cart" data-id="4" data-name="WSNBB PC Gaming Case" data-price="49.99">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="hdd/lowhdd/seagate.jpg" alt="Seagate HDD">
+                <h3>Seagate HDD</h3>
+                <p>2TB Storage</p>
+                <div class="price">$34.99</div>
+                <button class="add-to-cart" data-id="5" data-name="Seagate 2TB HDD" data-price="34.99">Add to Cart</button>
+            </div>
+
+
+        </div>
+    </div>
+<footer>
+    © 2025 E-Commerce Demo. All rights reserved.
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

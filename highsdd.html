@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>SSU New Gen TechMart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+		<a href="cart.html" class="header-cart cart-btn" aria-label="View cart">
+			<svg class="cart-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+				<path d="M6 6h15l-1.5 9h-12z"></path>
+				<circle cx="9" cy="20" r="1"></circle>
+				<circle cx="19" cy="20" r="1"></circle>
+			</svg>
+			<span class="cart-count">0</span>
+		</a>
+		<a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+<div class="container">
+	<div class="sidebar">
+		<h3>Categories</h3>
+		<a href="lowssd.html">Low End SDD</a>
+		<a href="highsdd.html">High End SDD</a>
+		<a href="shop.html#categories" class="back-button">Back to Categories</a>
+	</div>
+	<div class="products">
+		<div class="product">
+			<img src="sdd/highssd/corsair.jpeg" alt="">
+			<h3>CORSAIR </h3>
+			<p>MP600 Elite 2TB</p>
+			<div class="price">$19.99</div>
+			<button class="add-to-cart" data-id="1" data-name="CORSAIR MP600 Elite 2TB" data-price="19.99" data-image="sdd/highssd/corsair.jpeg">Add to Cart</button>
+		</div>
+
+		<div class="product">
+			<img src="sdd/highssd/crucial.jpeg" alt="">
+			<h3>Crucial </h3>
+			<p>T700 4TB PCIe Gen5 NVMe M.2</p>
+			<div class="price">$29.99</div>
+			<button class="add-to-cart" data-id="2" data-name="Crucial T700 4TB PCIe Gen5 NVMe M.2" data-price="29.99" data-image="sdd/highssd/crucial.jpeg">Add to Cart</button>
+		</div>
+
+		<div class="product">
+			<img src="sdd/highssd/msi.png" alt="">
+			<h3>MSI</h3>
+			<p> 2TB PCIe Gen5x4</p>
+			<div class="price">$39.99</div>
+			<button class="add-to-cart" data-id="3" data-name="MSI 2TB PCIe Gen5x4" data-price="39.99" data-image="sdd/highssd/msi.png">Add to Cart</button>
+		</div>
+
+		<div class="product">
+			<img src="sdd/highssd/samsung.jpeg" alt="">
+			<h3>Samsung 990 PRO</h3>
+			<p> 1TB</p>
+			<div class="price">$49.99</div>
+			<button class="add-to-cart" data-id="4" data-name="Samsung 990 PRO 1TB" data-price="49.99" data-image="sdd/highssd/samsung.jpeg">Add to Cart</button>
+		</div>
+
+		<div class="product">
+			<img src="sdd/highssd/western.jpeg" alt="">
+			<h3>Western Digital </h3>
+			<p>WD_BLACK SN770 M.2 2280 2TB PCIe Gen4 16GT/s</p>
+			<div class="price">$49.99</div>
+			<button class="add-to-cart" data-id="5" data-name="Western Digital WD_BLACK SN770 M.2 2280 500GB PCIe Gen4 16GT/s" data-price="49.99" data-image="sdd/highssd/western.jpeg">Add to Cart</button>
+		</div>
+
+	</div>
+</div>
+<footer>
+    © 2025 E-Commerce Demo. All rights reserved.
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

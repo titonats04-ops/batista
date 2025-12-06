@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>SSU New Gen TechMart</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="cart.html" class="header-cart cart-btn" aria-label="View cart">
+            <svg class="cart-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 6h15l-1.5 9h-12z"></path>
+                <circle cx="9" cy="20" r="1"></circle>
+                <circle cx="19" cy="20" r="1"></circle>
+            </svg>
+            <span class="cart-count">0</span>
+        </a>
+        <a href="login.html" class="login-btn">Login</a>
+    </nav>
+</header>
+<div class="container">
+    <div class="sidebar">
+        <h3>Categories</h3>
+        <a href="cases1.html">Low Budget Cases</a>
+        <a href="cases2.html">Gaming Cases</a>
+        <a href="shop.html#categories" class="back-button">Back to Categories</a>
+    </div>
+    <div class="products">
+        <div class="product">
+            <img src="cases/budget/bluegears.webp" alt="">
+            <h3>Bgears  </h3>
+            <p>b-Pellucid MicroATX</p>
+            <div class="price">$19.99</div>
+            <button class="add-to-cart" data-id="1" data-name="Bgears b-Pellucid MicroATX" data-price="19.99">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="cases/budget/darkrock.webp" alt="">
+            <h3>DARKROCK</h3>
+            <p> EC2 Black ATX Mid Tower PC Case</p>
+            <div class="price">$29.99</div>
+            <button class="add-to-cart" data-id="2" data-name="DARKROCK EC2 Black ATX Mid Tower PC Case" data-price="29.99">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="cases/budget/lian.webp" alt="">
+            <h3>LIAN LI</h3>
+            <p>LANCOOL 216 E-ATX PC Case</p>
+            <div class="price">$39.99</div>
+            <button class="add-to-cart" data-id="3" data-name="LIAN LI LANCOOL 216 E-ATX PC Case" data-price="39.99">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="cases/budget/montech.webp" alt="">
+            <h3>MONTECH </h3>
+            <p>XR-B, ATX Mid-Tower PC Case</p>
+            <div class="price">$49.99</div>
+            <button class="add-to-cart" data-id="4" data-name="MONTECH XR-B, ATX Mid-Tower PC Gaming Case" data-price="49.99">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="cases/budget/tgd.webp" alt="">
+            <h3>Matx</h3>
+            <p>High Airflow Micro ATX Case</p>
+            <div class="price">$49.99</div>
+            <button class="add-to-cart" data-id="5" data-name="Matx Case:High Airflow Micro ATX Case" data-price="49.99">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2025 E-Commerce Demo. All rights reserved.
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
